@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QQ登录窗口</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!---遮罩层禁止被选中-->
+	<div class="ui_mask" id="mask" onselectstart="return false"></div>  
+	<div class="login" id="login">
+		<div class="login_title">
+			<div class="login_logo"></div>
+			<a href="javascript:hideLogin();" class="login_closebtn"></a>
+		</div>
+		<div class="inputs">
+			<div class="sign-input">
+			<span>账  号：</span>
+			<input type="text" name="user_name" placeholder="QQ号码或Email账号">
+			</div>
+			<div class="sign-input">
+			<span>密  码：</span>
+			<input type="password" name="p">
+			</div>
+		</div>
+		<div class="bottomDiv">
+			<div class="btn"></div>
+			<div class="loginState">
+			  <div id="trigger">
+				<div class="original"></div>
+				<div class="arrow"></div>
+			  </div>
+				<span>在线上</span>
+				<ul class="stateselect">
+					<li class="conditions">
+					<div class="icons callme"></div>
+					<span class="status">Q我吧</span>
+					</li>
+					<li class="conditions">
+					<div class="icons away"></div>
+					<span class="status">离开</span>
+					</li>
+					<li class="conditions">
+					<div class="icons busy"></div>
+					<span class="status">忙碌</span>
+					</li>
+					<li class="conditions">
+					<div class="icons silent"></div>
+					<span class="status">请勿打扰</span>
+					</li>
+					<li class="conditions">
+					<div class="icons hidden"></div>
+					<span class="status">隐身</span>
+					</li>
+					<li class="conditions">
+					<div class="icons off"></div>
+					<span class="status">离线</span>
+					</li>
+				</ul>
+				</div>
+			
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
